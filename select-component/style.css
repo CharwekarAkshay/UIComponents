@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #141c2c;
+    color: #f7f8fc;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+.dropdown-container{
+    /* width: 500px; */
+    height: 500px;
+    /* background-color: #fff; */
+    border-radius: 10px;
+}
+
+.text-holder {
+    cursor: pointer;
+    width: 400px;
+    min-height: 40px;
+    padding: 8px 8px 8px 15px;
+    border: 1px solid #9dc0e0;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #fff;
+    text-decoration: none solid rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.text-holder p{
+    margin: 0;
+}
+
+.text-holder .fa-caret-down {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+.dropdown-search {
+    width: 400px;
+    height: 215px;
+    padding: 0px 8px;
+    background-size: cover;
+    font-family: Arial;
+    background-color: #fff;
+    border: 1px solid #9dc0e0;
+    font-size: 16px;
+    color: #ababab;
+    text-decoration: none solid rgb(171, 171, 171);
+    overflow: scroll;
+    border-radius: 4px;
+}
+
+.dropdown-search-div{
+    cursor: pointer;
+    width: 100%;
+    color: #35404e;
+    min-height: 40px;
+    padding: 10px 20px;
+}
+
+.dropdown-search-div:not(:last-child){
+    border-bottom: 1px dashed #787878;
+}
+
+.dropdown-search-input{
+    cursor: pointer;
+    width: 100%;
+    color: #35404e;
+    min-height: 40px;
+    /* padding: 10px 20px; */
+    padding: 5px 0 0 0;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px dashed #787878;
+}
+
+.dropdown-search-input input{
+    border: none;
+    width: 100%;
+    height: 30px;
+}
+
+.dropdown-search-input input:focus{
+    border: 1px solid #9dc0e0;
+}
+
+.dropdown-search-input .fa-search{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}   
+
+.close {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
