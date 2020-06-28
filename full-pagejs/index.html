@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natrues :: Landing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section section-one">
+          <h1>Home</h1>
+      </div>
+      <div class="section section-two">
+        <h1>Trips You wanna plan with us</h1>
+      </div>
+      <div class="section section-three">
+        <h1>Pricing</h1>
+      </div>
+      <div class="section section-four">
+        <h1>Know more about us</h1>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"
+      integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      new fullpage("#fullpage", {
+        autoScrolling: true,
+        scrollHorizontally: true,
+        lockAnchors: true,
+        navigation: true,
+        showActiveTooltip:true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Home', 'Trips', 'Pricing','About'],
+
+        css3: true,
+
+      });
+    </script>
+  </body>
+</html>

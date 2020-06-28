@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+}
+
+.section-one{
+    background: url('./images/nature1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.section-two{
+    background: url('./images/nature2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.section-three{
+    background: url('./images/nature3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.section-four{
+    background: url('./images/nature4.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{ background: #fff !important; }
