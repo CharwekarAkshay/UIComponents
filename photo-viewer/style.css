@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbe2e9;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  min-width: 80vw;
+  min-height: 80vh;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 25px 55px;
+}
+
+.navigation {
+    justify-content: flex-end;
+
+}
+.navigation-links{
+    width: 25%;
+}
+
+.links {
+    justify-content: space-between;
+}
+
+.links a {
+    text-decoration: none;
+    color: #334043;
+}
+
+.actions{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container div.margin-even:not(:last-child) {
+    margin-bottom: 40px
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    background-color: #334043;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px #334043;
+}
+
+.form-control {
+    border-bottom: 1px solid #DBE2E9;
+    color: #DBE2E9;
+}
+
+.form-control input {
+    padding:  10px 10px;
+    outline: none;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.image-holder img{
+    width: 335px;
+}
+
+.image-holder  div.margin-even:not(:last-child) {
+    margin-bottom: 20px
+}
+
+
+/* utilities */
+.row {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+    justify-content: space-between;
+    align-content: center;
+}
+
+.width-100 {
+    width: 100%;
+}
