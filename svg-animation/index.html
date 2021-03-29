@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated SVG</title>
+    <style>
+        :root {
+            --dark-color: #635bff;
+            --light-color: #80e9ff;
+        }
+
+        svg {
+            cursor: pointer;
+        }
+
+        #darkGroup {
+            fill: var(--dark-color);
+        }
+
+        #lightGroup {
+            fill: var(--light-color);
+        }
+
+        #dark1,
+        #light1,
+        #dark2 {
+            transition: all 1s ease;
+        }
+
+        #dark2 {
+            transform: translateX(-100%);
+        }
+
+        svg:hover #light1 {
+            transform: translateX(20%);
+        }
+
+        svg:hover #dark1 {
+            transform: translateX(40%);
+            opacity: 0;
+        }
+
+        svg:hover #dark2 {
+            transform: translateX(5%);
+        }
+    </style>
+</head>
+
+<body>
+    <svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="triangles">
+            <rect width="120" height="100" fill="white" />
+            <g id="darkGroup">
+                <path id="dark1" opacity="0.7"
+                    d="M57 50.768C58.3333 51.5378 58.3333 53.4623 57 54.2321L30.75 69.3875C29.4167 70.1573 27.75 69.195 27.75 67.6554V37.3445C27.75 35.8049 29.4167 34.8427 30.75 35.6125L57 50.768Z" />
+                <path id="dark2" opacity="0.7"
+                    d="M43 50.768C44.3333 51.5378 44.3333 53.4623 43 54.2321L16.75 69.3875C15.4167 70.1573 13.75 69.195 13.75 67.6554V37.3445C13.75 35.8049 15.4167 34.8427 16.75 35.6125L43 50.768Z" />
+            </g>
+            <g id="lightGroup">
+                <path id="light1" opacity="0.7"
+                    d="M43 50.768C44.3333 51.5378 44.3333 53.4623 43 54.2321L16.75 69.3875C15.4167 70.1573 13.75 69.195 13.75 67.6554V37.3445C13.75 35.8049 15.4167 34.8427 16.75 35.6125L43 50.768Z" />
+            </g>
+        </g>
+    </svg>
+    <script>
+        const svg = document.getElementById('triangles');
+        svg.onclick = (event) => {
+            const colors = ['red', 'blue', 'green', 'orange', 'pink', 'purple'];
+            const random = () => colors[Math.floor(Math.random() * colors.length)];
+            document.documentElement.style.cssText = `
+                --dark-color: ${random()};
+                --light-color: ${random()};
+            `
+        };
+    </script>
+</body>
+
+</html>
